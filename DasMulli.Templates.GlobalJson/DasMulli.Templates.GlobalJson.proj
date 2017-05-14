@@ -1,0 +1,21 @@
+<Project>
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+
+  <PropertyGroup>
+    <Version>1.0.0-beta-001</Version>
+    <TargetFramework>netstandard1.0</TargetFramework>
+    <NuspecFile>$(MSBuildThisFileDirectory)\DasMulli.Templates.GlobalJson.nuspec</NuspecFile>
+    <NuspecProperties>version=$(Version)</NuspecProperties>
+    <PackProjectInputFile>$(MSBuildProjectFullPath)</PackProjectInputFile>
+    <NoBuild>true</NoBuild>
+    <IncludeBuildOutput>False</IncludeBuildOutput>
+    <IncludeSource>False</IncludeSource>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <EnableDefaultItems>False</EnableDefaultItems>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+  </PropertyGroup>
+
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+
+</Project>

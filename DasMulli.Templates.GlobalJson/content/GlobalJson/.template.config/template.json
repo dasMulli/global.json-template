@@ -1,0 +1,22 @@
+{
+  "author": "dasMulli",
+  "name": "GlobalJson",
+  "identity": "DasMulli.Templates.GlobalJson",
+  "classifications": [
+    "Config"
+  ],
+  "shortName": "globaljson",
+  "groupIdentity": "ItemGlobalJson",
+  "precedence": "100",
+  "generatorVersions": "[1.0.0.0-*)",
+  "symbols": {
+    "sdkVersion": {
+      "description": "Overrides the version of the .NET SDK to set in the generated global.json.",
+      "type": "parameter",
+      "binding": "sdkVersion",
+      "dataType": "string",
+      "defaultValue": "1.0.4",
+      "replaces": "1.0.0"
+    }
+  }
+}

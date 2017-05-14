@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>DasMulli.Templates.GlobalJson</id>
+    <version>$version$</version>
+    <authors>Martin Andreas Ullrich</authors>
+    <description>Template for global.json files for the .net templating eninge</description>
+    <language>en-US</language>
+    <tags>globaljson;template</tags>
+    <projectUrl>https://github.com/dasMulli/global.json-template</projectUrl>
+    <licenseUrl>https://github.com/dasMulli/global.json-template/blob/master/LICENSE</licenseUrl>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+  <files>
+    <file src="content/**" target="" />
+  </files>
+</package>
