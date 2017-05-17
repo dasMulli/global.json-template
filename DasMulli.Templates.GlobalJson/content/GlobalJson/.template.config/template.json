@@ -10,12 +10,24 @@
   "precedence": "100",
   "generatorVersions": "[1.0.0.0-*)",
   "symbols": {
-    "sdkVersion": {
+    "SdkVersion": {
       "description": "Overrides the version of the .NET SDK to set in the generated global.json.",
       "type": "parameter",
       "binding": "sdkVersion",
-      "dataType": "string",
-      "defaultValue": "1.0.4",
+      "dataType": "string"
+    },
+    "HostSdkVersion": {
+      "type": "bind",
+      "binding": "dotnet-cli-version",
+      "dataType": "string"
+    },
+    "SdkVersionReplacer": {
+      "type": "generated",
+      "generator": "coalesce",
+      "parameters": {
+        "sourceVariableName": "SdkVersion",
+        "fallbackVariableName": "HostSdkVersion"
+      },
       "replaces": "1.0.0"
     }
   }

@@ -1,14 +1,8 @@
 {
   "symbolInfo": {
-    "sdkVersion": {
-      "longName": "sdk-version",
-      "shortName": "v"
-    },
-    "hostSdkVersion": {
-      "isHidden": "true"
-    },
-    "resolvedSdkVersion": {
-      "isHidden": "true"
+    "SdkVersion": {
+      "shortName": "v",
+      "longName": "sdk-version"
     }
   },
   "UsageExamples": [
